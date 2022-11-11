@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cus-dialog-input":"/components/dialogInput/index",
+    "cus-dialog": "/components/confirmBox/index"
+  }
+}

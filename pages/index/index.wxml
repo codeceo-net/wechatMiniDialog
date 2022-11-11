@@ -1,0 +1,14 @@
+<!--pages/setting/setting.wxml-->
+<import src="/template/setting_item/index" />
+<scroll-view style="width:100%;" enable-flex class="content-scroll flex1 display_flex flex_direction_column" scroll-y>
+  <template is="setting-item" data="{{title:'当前账号',value:userName, isarrow:false}}"/>
+
+  <template is="setting-item" data="{{title:'姓名',value:nickName, isarrow: true,clickFun:'updateNickNameClick'}}"  />
+
+  <template is="setting-item" data="{{title:'手机',value:phone, isarrow:true,clickFun:'updatePhoneClick'}}" />
+
+  <template is="setting-item"  data="{{title:'修改密码',value:'', isarrow:true,clickFun:'updatePassWordClick'}}" />
+  <template is="setting-item" data="{{title:'退出登录',value:'', isarrow:true,clickFun:'logoutClick'}}" />
+</scroll-view>
+<cus-dialog-input id="cus-dialog-input" />
+<cus-dialog id="cus-dialog" />

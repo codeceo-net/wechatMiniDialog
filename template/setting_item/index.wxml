@@ -1,0 +1,11 @@
+<template name="setting-item">
+  <view class="item line_bottom_solid_1 flex_direction_row display_flex pt10 pb10 mt10 ml10 mr10 pr10 pl10" bindtap="{{clickFun}}">
+      <view class="color_gray size18">
+      {{title}}
+      </view>
+      <view class="color_blank flex1 text_align_right">
+      {{value}}
+      </view>
+      <image src="/images/arrow_right.png" style="width: 20px;height: 20px;" hidden="{{!isarrow}}"/>
+    </view>
+</template>
